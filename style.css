@@ -1,0 +1,270 @@
+
+@font-face { font-family: roboto-mono; 
+    src: url('../font/Roboto-Regular.ttf'); } 
+    
+    
+body {
+    margin:0;
+    font-family: 'roboto Mono';
+    background-color: #F1F1F1;
+}
+.header{
+    height: 80px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #E4FDF9;
+    position: relative;
+    display: flex;
+    justify-content: stretch;
+    align-items:center;
+    padding-right: 20px;
+    padding-left:20px;
+    
+}
+
+.logo2{
+    
+    height: 150px;
+    
+    
+}
+.header-nav{
+    display: flex;  
+    margin-left: 260px;  
+}
+.span-kids{
+    margin-left: 10px;
+}
+.header-item{
+    font-size:22px; 
+    cursor: pointer; 
+     
+}
+.header-items{
+    position: relative;
+    margin-left: 30px;
+    
+    
+}
+.header-item1:hover ~ .header-item-1-dropdown{
+    display: block;
+}
+.header-item2:hover ~ .header-item-2-dropdown {
+    display: block;
+}
+.header-item-1-dropdown{
+    width: 180px;
+    background-color: #DFDFDF;
+    display: none;
+    position: absolute;
+    left: -73%;
+    top: 30px;
+    z-index: 1;
+    border-radius: 20px;
+    animation: fadeIn 1s; 
+
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.header-item-2-dropdown{
+    width: 180px;
+    background-color: #DFDFDF;
+    display: none;
+    position: absolute;
+    margin-left: -48%;
+    top: 30px;
+    z-index: 1;
+    border-radius: 20px;
+    animation: fadeIn 1s;
+}
+
+}
+.header-item-1-dropdown > ul {
+   margin: 0; 
+   padding: 0;
+   padding: 20px 15px;
+}
+.header-item-1-dropdown > ul > li{
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-right: 40px;
+}
+
+.header-item-2-dropdown > ul {
+    margin: 0; 
+    padding: 0;
+    padding: 20px 15px;
+ }
+ .header-item-2-dropdown > ul > li {
+     font-size: 20px;
+     display: block;
+     text-align: center;
+     padding-bottom: 10px;
+ 
+ }
+
+.header-item:not(:last-child){
+    margin-right: 60px;
+}
+
+.label1{
+    position: absolute;
+    right: 20px;
+    top: 50;
+    transform: translateY(-50%);
+    user-select: none;
+    cursor: pointer;
+}
+
+.navbar {
+    position: absolute;
+    width: 350px;
+    height: 100%;
+    background-color: red;
+    top: 0;
+    left: 0;
+} 
+
+.slider{
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+.slider-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider-btn{ 
+    position: absolute; 
+    background-color: white;
+     left: 48%;
+     top: 51%; 
+     transform: translate(-50%,-50%);
+    border:none;
+    padding:30px 45px; 
+    border-radius: 50px;
+    font-size: 22px;
+    cursor: pointer;
+    font-family: inherit; 
+    animation: bottomUp .7s linear;
+    transition: all .2s;
+    box-shadow: 0px 10px 10px #423b33
+}
+.slider-btn:active {
+    box-shadow: 0px 5px 10px #423B33;
+    transform: translate(-50%, -45%);
+}
+
+ 
+@keyframes bottomUp {
+    0%{
+        top: 60%;
+        opacity: 0;
+    }
+    100% {
+        top:50%;
+        opacity: 1;
+    }
+}
+
+.container{
+    width:843px;
+    height: 490px;
+    display: flex;
+    margin:0 auto;
+    margin-top: 20px;   
+    position: relative;
+    background-color: #D8F3F9;
+}
+
+.right-block{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.kids{
+    /* height: 260px;
+    object-fit: cover; */
+    margin-top: 20px;
+}
+/* .left-block{
+     position: relative;
+} */
+
+
+.button-1{
+    background-color: rgb(9, 12, 2);
+    color: white;
+    width: 100px;
+    height: 40px;
+    border-radius: 40px;
+    border:none;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 52%;  
+    margin-left: 10px;     
+    transition:ease-out 1s;
+    outline: none;
+    
+}
+.button-1:hover{
+    cursor: pointer;
+    color: #1EEDDD;
+    animation-name: bottom-top;
+    animation-duration: 0.7s;
+    -webkit-animation-fill-mode: forwards;
+}
+@keyframes bottom-top {
+    0%{
+        tranform: translateY(0%)
+    }
+    100%{
+        transform:translateY(5%)
+    }
+}
+
+.kids-button{
+    margin-left: 207px;
+    
+}
+.man{
+    margin-top: 168px;
+    margin-left: 196px;
+}
+
+.h1{
+    font-size: 25px;
+    margin-left: 252px;
+   
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: #B4F4F7;
+    margin-top: 20px;
+}
+
+.container3{
+    display: flex;
+    justify-content: space-around;
+}
+p{
+    font-size: 20px;
+}
+.ftr{
+    margin-left: 20px;
+}
+.ftr1{
+    margin-left: 35px;
+}
